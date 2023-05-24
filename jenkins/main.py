@@ -4,7 +4,8 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import os
 import platform  # 导入platform模块
-
+import build_android
+import build_assetbundle
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name} os{os.name}')  # Press Ctrl+F8 to toggle the breakpoint.
@@ -16,6 +17,8 @@ def print_hi(name):
     print('计算机的网络名称：', platform.node())  # 计算机的网络名称
     print('计算机处理器信息：', platform.processor())  # 计算机处理器信息
     print('包含上面所有的信息汇总：', platform.uname())  # 包含上面所有的信息汇总
+    build_android.main()
+    build_assetbundle.main()
     exit(1)
 
 # Press the green button in the gutter to run the script.
